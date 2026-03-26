@@ -1,8 +1,8 @@
 #!/bin/bash
 # @cmd: setupsh
 # @desc: sh 파일 설정 (CRLF→LF 변환 + 실행 권한 부여)
-# @usage: setupsh <대상 sh 파일 경로>
-# @example: setupsh ./test.sh
+# @usage: ser setupsh <대상 sh 파일 경로>
+# @example: ser setupsh ./test.sh
 # 용도: sh 파일의 줄바꿈(CRLF→LF) 변환 + 실행 권한 부여
 
 if [[ $# -lt 1 ]]; then

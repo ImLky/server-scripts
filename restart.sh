@@ -1,8 +1,8 @@
 #!/bin/bash
 # @cmd: restart
 # @desc: 서비스 재시작 (git pull + 재빌드 + npm install)
-# @usage: restart <서비스명>
-# @example: restart test
+# @usage: ser restart <서비스명>
+# @example: ser restart test
 # restart.sh — git pull + docker compose 서비스 재시작
 
 set -euo pipefail

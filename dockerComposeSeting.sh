@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # @cmd: dcs
 # @desc: 서비스 추가 (Docker Compose + Nginx)
-# @usage: dcs <서비스명> <디렉토리명> <포트> <주석>
-# @example: dcs abc q-mes 10001 '테스트 서비스'
+# @usage: ser dcs <서비스명> <디렉토리명> <포트> <주석>
+# @example: ser dcs abc q-mes 10001 '테스트 서비스'
 # 목적: 서비스 추가 + 로컬 Nginx 없을 때 원격(192.168.0.150) Nginx 설정 추가, 실패 시 전체 롤백
 
 set -euo pipefail

@@ -1,7 +1,7 @@
 #!/bin/bash
 # @cmd: allrestart
 # @desc: 전체 서비스 재시작 (Q-MES-* 전체 순회)
-# @usage: allrestart
+# @usage: ser allrestart
 # --------------------------------------------
 # Q-MES- �� �����ϴ� �������� �̸� ������ restart.sh ����
 # ��: Q-MES-25G-jcfood-Q249 �� ./restart.sh jcfood

@@ -1,7 +1,7 @@
 #!/bin/bash
 # @cmd: allpull
 # @desc: 전체 git pull (Q-MES-* 전체 순회)
-# @usage: allpull
+# @usage: ser allpull
 
 for dir in Q-MES-*; do
   if [ -d "$dir/.git" ]; then
