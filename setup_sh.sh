@@ -1,7 +1,9 @@
 #!/bin/bash
+# @cmd: setupsh
+# @desc: sh 파일 설정 (CRLF→LF 변환 + 실행 권한 부여)
+# @usage: setupsh <대상 sh 파일 경로>
+# @example: setupsh ./test.sh
 # 용도: sh 파일의 줄바꿈(CRLF→LF) 변환 + 실행 권한 부여
-# 사용법: ./setup_sh.sh <대상 sh 파일 경로>
-# 예시:   ./setup_sh.sh /home/docker/dockerComposeSeting.sh
 
 if [[ $# -lt 1 ]]; then
   echo ""
