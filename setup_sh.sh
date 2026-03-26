@@ -2,7 +2,7 @@
 # @cmd: setupsh
 # @desc: sh 파일 설정 (CRLF→LF 변환 + 실행 권한 부여)
 # @usage: ser setupsh <대상 sh 파일 경로>
-# @example: ser setupsh ./test.sh
+# @example: ser setupsh test.sh
 # 용도: sh 파일의 줄바꿈(CRLF→LF) 변환 + 실행 권한 부여
 
 if [[ $# -lt 1 ]]; then
@@ -22,7 +22,7 @@ if [[ $# -lt 1 ]]; then
   echo ""
   echo "  예시:"
   echo "    $0 /home/docker/dockerComposeSeting.sh"
-  echo "    $0 ./test.sh"
+  echo "    $0 test.sh"
   echo ""
   echo "========================================"
   exit 1
