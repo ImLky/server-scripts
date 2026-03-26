@@ -107,13 +107,6 @@ if docker compose -f "$COMPOSE_FILE" ps | grep -q "$SERVICE"; then
   docker compose -f "$COMPOSE_FILE" stop "$SERVICE" >/dev/null 2>&1 && \
     echo "✅ 컨테이너 중지 완료: $SERVICE" || \
     echo "⚠️ 컨테이너 중지 실패 (무시)"
-  # MANUAL_STOP 신호 전송 (중앙 모니터링 자동재시작 방지)
-  curl -sf -X POST "https://q.ezqai.com/api/monitor/restart/signal" \
-    -H "Content-Type: application/json" \
-    -d "{\"companyName\":\"${SERVICE}\",\"action\":\"MANUAL_STOP\"}" \
-    --max-time 5 >/dev/null 2>&1 && \
-    echo "📡 MANUAL_STOP 신호 전송: $SERVICE" || \
-    echo "⚠️ MANUAL_STOP 신호 실패 (무시)"
 else
   echo "ℹ️ '$SERVICE' 관련 컨테이너 없음 (stop 스킵)"
 fi
